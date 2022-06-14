@@ -23,9 +23,11 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
-
+- [Coinbase Wallet SDK](https://docs.cloud.coinbase.com/wallet-sdk/docs/welcome) - Coinbase Wallet is a self-custody crypto wallet, available as a browser extension and a mobile app on Android and iOS.
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Wagmi](https://wamgi.sh) - a collection of React Hooks containing everything you need to start working with Ethereum.
+- [Chakra UI](https://chakra-ui.com/) - a simple, modular and accessible component library that gives you the building blocks you need to build your React applications.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
