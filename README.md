@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Health Verify
+
+Welcome to Health Verify, a sample project that demonstrates how easily you can integrate the Coinbase Wallet SDK to your existing dapp.
 
 ## Getting Started
 
