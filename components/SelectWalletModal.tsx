@@ -57,7 +57,19 @@ export default function SelectWalletModal({
                 w="100%"
               >
                 <HStack w="100%" justifyContent="center">
-                  <Text>{connector.name} {isConnecting && pendingConnector?.id === connector.id && ' (connecting)'}</Text>
+                  <Image
+                    width={26}
+                    height={26}
+                    borderRadius="3px"
+                    src={walletIcons(connector.name)}
+                    alt={"Wallet"}
+                  ></Image>
+                  <Text>
+                    {connector.name}{" "}
+                    {isConnecting &&
+                      pendingConnector?.id === connector.id &&
+                      " (connecting)"}
+                  </Text>
                 </HStack>
               </Button>
             ))}
@@ -68,3 +80,6 @@ export default function SelectWalletModal({
     </Modal>
   );
 }
+
+const walletIcons = (walletName: string) =>
+  walletName === "MetaMask" ? "mm.png" : "/cbw.png";

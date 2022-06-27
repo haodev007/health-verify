@@ -9,17 +9,17 @@ import {
   ListItem,
   UnorderedList,
   useDisclosure,
-} from "@chakra-ui/react";
-import type { NextPage } from "next";
-import Head from "next/head";
+} from "@chakra-ui/react"
+import type { NextPage } from "next"
+import Head from "next/head"
 
-import { useAccount, useConnect } from "wagmi";
-import SelectWalletModal from "../components/SelectWalletModal";
-import { Certifications } from "../components/certifications";
+import { useAccount, useConnect } from "wagmi"
+import SelectWalletModal from "../components/SelectWalletModal"
+import { Certifications } from "../components/certifications"
 
 const Home: NextPage = () => {
-  const { data: account } = useAccount();
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { data: account } = useAccount()
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
     <>
@@ -57,8 +57,8 @@ const Home: NextPage = () => {
                 certifications by following the steps below.
               </Text>
               <UnorderedList listStyleType="none">
-                <ListItem>Click Connect your Wallet</ListItem>
-                <ListItem>Create a Coinbase account</ListItem>
+                <ListItem>{`Click 'Start' to connect your wallet.`}</ListItem>
+                <ListItem>{`If you don't have a wallet, create a Coinbase Wallet by selecting Coinbase Wallet`}</ListItem>
                 <ListItem>Select a certification to verify</ListItem>
                 <ListItem>Enter your Certification ID</ListItem>
                 <ListItem>
@@ -91,7 +91,7 @@ const Home: NextPage = () => {
       </Flex>
       <SelectWalletModal isOpen={isOpen} closeModal={onClose} />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

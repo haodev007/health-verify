@@ -15,14 +15,14 @@ export function Certifications() {
       imageAlt: "Radiology",
       title: "Radiologist",
       duration: 3,
-      id: 2
+      id: 2,
     },
     {
       imageUrl: "https://bit.ly/3Qngfpm",
       imageAlt: "Physiotherapist",
       title: "Physiotherapist",
       duration: 2,
-      id: 3
+      id: 3,
     },
   ];
 

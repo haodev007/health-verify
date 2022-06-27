@@ -1,6 +1,7 @@
 # Health Verify
 
 Welcome to Health Verify, a sample project that demonstrates how easily you can integrate the Coinbase Wallet SDK to your existing dapp.
+NOTE: The Health Certification verification feauture is not supported in this repo.
 
 ## Getting Started
 
@@ -13,7 +14,7 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
+ 
 
 ## Learn More
 

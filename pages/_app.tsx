@@ -1,15 +1,15 @@
-import type { AppProps } from 'next/app'
-import { providers } from 'ethers'
-import { ChakraProvider } from '@chakra-ui/react'
-import { WagmiConfig, createClient, configureChains, chain } from 'wagmi'
-import { connectors } from '../utils/connectors'
-import { infuraProvider } from 'wagmi/providers/infura'
+import type { AppProps } from "next/app"
+import { providers } from "ethers"
+import { ChakraProvider } from "@chakra-ui/react"
+import { WagmiConfig, createClient, configureChains, chain } from "wagmi"
+import { connectors } from "../utils/connectors"
+import { infuraProvider } from "wagmi/providers/infura"
 
 
 const infuraId = process.env.REACT_APP_INFURA_ID
 const { provider } = configureChains(
   [chain.mainnet, chain.polygon],
-  [infuraProvider({ infuraId })],
+  [infuraProvider({ infuraId })]
 )
 
 const client = createClient({
